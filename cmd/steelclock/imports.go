@@ -34,8 +34,5 @@ import (
 	_ "github.com/pozitronik/steelclock-go/internal/widget/volumemeter"
 	_ "github.com/pozitronik/steelclock-go/internal/widget/weather"
 	_ "github.com/pozitronik/steelclock-go/internal/widget/winampwidget"
-<<<<<<< HEAD
-=======
 	- "github.com/TornadoApple/steelclock-go/internal/widget/train"
->>>>>>> f533bf0 (train widget experiment)
 )
