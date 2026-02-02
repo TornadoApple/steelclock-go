@@ -34,5 +34,5 @@ import (
 	_ "github.com/pozitronik/steelclock-go/internal/widget/volumemeter"
 	_ "github.com/pozitronik/steelclock-go/internal/widget/weather"
 	_ "github.com/pozitronik/steelclock-go/internal/widget/winampwidget"
-	- "github.com/TornadoApple/steelclock-go/internal/widget/train"
+	_ "github.com/TornadoApple/steelclock-go/internal/widget/train"
 )
