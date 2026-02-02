@@ -392,7 +392,11 @@ func TestHandleConfig_Post_Success(t *testing.T) {
 	body := `{"config_name": "new_config"}`
 	req := httptest.NewRequest(http.MethodPost, "/api/config", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -414,7 +418,11 @@ func TestHandleConfig_Post_InvalidJSON(t *testing.T) {
 	body := `{invalid json}`
 	req := httptest.NewRequest(http.MethodPost, "/api/config", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -450,7 +458,11 @@ func TestHandleConfig_Post_LocalhostOrigin(t *testing.T) {
 	body := `{"config_name": "test"}`
 	req := httptest.NewRequest(http.MethodPost, "/api/config", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://localhost:8384")
+=======
+	req.Header.Set("Origin", "http://localhost:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -501,7 +513,11 @@ func TestHandleConfig_Post_WrappedFormat(t *testing.T) {
 	body := `{"path": "` + savePathJSON + `", "config": {"config_name": "wrapped"}}`
 	req := httptest.NewRequest(http.MethodPost, "/api/config", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -779,7 +795,11 @@ func TestHandleProfiles_Create_Success(t *testing.T) {
 	body := `{"name": "New Profile"}`
 	req := httptest.NewRequest(http.MethodPost, "/api/profiles", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -801,7 +821,11 @@ func TestHandleProfiles_Create_EmptyName(t *testing.T) {
 	body := `{"name": ""}`
 	req := httptest.NewRequest(http.MethodPost, "/api/profiles", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -884,7 +908,11 @@ func TestHandleActiveProfile_Success(t *testing.T) {
 	body := `{"path": "/test/profile.json"}`
 	req := httptest.NewRequest(http.MethodPost, "/api/profiles/active", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -924,7 +952,11 @@ func TestHandleActiveProfile_NilProvider(t *testing.T) {
 	body := `{"path": "/test/profile.json"}`
 	req := httptest.NewRequest(http.MethodPost, "/api/profiles/active", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -960,7 +992,11 @@ func TestHandleRenameProfile_Success(t *testing.T) {
 	body := `{"path": "/old/path.json", "new_name": "New Name"}`
 	req := httptest.NewRequest(http.MethodPost, "/api/profiles/rename", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -982,7 +1018,11 @@ func TestHandleRenameProfile_MissingPath(t *testing.T) {
 	body := `{"new_name": "New Name"}`
 	req := httptest.NewRequest(http.MethodPost, "/api/profiles/rename", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -1000,7 +1040,11 @@ func TestHandleRenameProfile_MissingNewName(t *testing.T) {
 	body := `{"path": "/old/path.json"}`
 	req := httptest.NewRequest(http.MethodPost, "/api/profiles/rename", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -1228,7 +1272,11 @@ func TestHandlePreviewOverride_Enable(t *testing.T) {
 	body := `{"enable": true}`
 	req := httptest.NewRequest(http.MethodPost, "/api/preview/override", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -1257,7 +1305,11 @@ func TestHandlePreviewOverride_Disable(t *testing.T) {
 	body := `{"enable": false}`
 	req := httptest.NewRequest(http.MethodPost, "/api/preview/override", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -1280,7 +1332,11 @@ func TestHandlePreviewOverride_NoCallback(t *testing.T) {
 	body := `{"enable": true}`
 	req := httptest.NewRequest(http.MethodPost, "/api/preview/override", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)
@@ -1333,7 +1389,11 @@ func TestHandlePreviewOverride_InvalidJSON(t *testing.T) {
 	body := `{invalid}`
 	req := httptest.NewRequest(http.MethodPost, "/api/preview/override", strings.NewReader(body))
 	req.Header.Set("Content-Type", "application/json")
+<<<<<<< HEAD
 	req.Header.Set("Origin", "http://127.0.0.1:8384")
+=======
+	req.Header.Set("Origin", "http://127.0.0.1:8385")
+>>>>>>> f533bf0 (train widget experiment)
 	w := httptest.NewRecorder()
 
 	mux.ServeHTTP(w, req)

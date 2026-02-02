@@ -13,7 +13,11 @@ import (
 )
 
 // DefaultPort is the default port for the web editor server
+<<<<<<< HEAD
 const DefaultPort = 8384
+=======
+const DefaultPort = 8385
+>>>>>>> f533bf0 (train widget experiment)
 
 // Server manages the embedded web configuration editor
 type Server struct {

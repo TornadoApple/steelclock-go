@@ -25,10 +25,7 @@ type LinuxReader struct {
 func NewLinuxReader() (*LinuxReader, error) {
 	reader := &LinuxReader{}
 
-<<<<<<< HEAD
-=======
 	
->>>>>>> f533bf0 (train widget experiment)
 	// Detect which audio tool is available
 	// Priority: wpctl (PipeWire) > pactl (PulseAudio) > amixer (ALSA)
 	if _, err := exec.LookPath("wpctl"); err == nil {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "$schema": "profiles/schema/config.schema.json",
   "config_name": "Main Profile",
@@ -532,3 +533,6 @@
     "update_interval": 1
   }
 }
+=======
+{"config_name":"Vivi Main","refresh_rate_ms":33,"display":{"width":128,"height":40,"background":0},"widgets":[{"type":"clock","position":{"x":0,"y":0,"w":128,"h":40,"z":5},"style":{"background":-1},"spectrum":{"dynamic_scaling":{"strength":2,"window":0.5},"peak":{"enabled":false},"colors":{"fill":255,"left":255,"right":255},"bars":128,"smoothing":0,"frequency_compensation":true},"oscilloscope":{"colors":{}},"error_threshold":40,"text":{"align":{},"size":16},"analog":{"colors":{}},"binary":{},"segment":{"flip":{}}},{"type":"matrix","position":{"x":0,"y":0,"w":128,"h":40,"z":0},"update_interval":0.033,"matrix":{"charset":"katakana","font_size":"auto","density":0.5,"min_speed":0.5,"max_speed":2.5,"min_length":4,"max_length":12,"trail_fade":0.8,"char_change_rate":0.03,"head_color":148},"enabled":true,"style":{"background":0,"border":-1,"padding":0}},{"type":"volume","position":{"x":0,"y":0,"w":16,"h":40,"z":1},"style":{"background":128,"padding":1},"spectrum":{"dynamic_scaling":{},"peak":{},"colors":{}},"oscilloscope":{"colors":{}},"text":{"align":{}},"auto_hide":{"on_silence":false,"enabled":true,"timeout":1},"bar":{"colors":{},"direction":"vertical"},"gauge":{"colors":{}}},{"type":"weather","position":{"x":0,"y":0,"w":128,"h":40,"z":3},"style":{"background":-1},"spectrum":{"dynamic_scaling":{},"peak":{},"colors":{}},"oscilloscope":{"colors":{}},"text":{"align":{}},"weather":{"location":{"city":"New York,US"},"cycle":{},"forecast":{},"units":"imperial"}}],"game_name":"STEELCLOCK","game_display_name":"SteelClock","unregister_on_exit":false,"direct_driver":{"interface":"mi_01"},"webclient":{"target_fps":30},"bundled_font_url":null,"defaults":{"text":{"font":null,"size":16,"align":{"h":"center","v":"center"},"format":"{unread} unread"},"update_interval":1},"backend":"webclient"}
+>>>>>>> f533bf0 (train widget experiment)
